@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_margin="60dp"
+    android:layout_marginLeft="80dp"
+    android:layout_marginRight="80dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:background="@drawable/dialog_shape">
+
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请确保小车已经启动 ^_^"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="5"
+            android:textSize="@dimen/text_size_normal"
+            android:gravity="center"
+            />
+        <RelativeLayout
+            android:id="@+id/ok"
+            android:padding="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:layout_below="@id/dialog_text"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" >
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="确定"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+<!--
+    <ImageButton
+        android:id="@+id/dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#876f"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        />-->
+</RelativeLayout>

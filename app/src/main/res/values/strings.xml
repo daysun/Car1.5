@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Car1.5</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <array name="pic_size">
+        <item>320*240</item>
+        <item>600*480</item>
+        <item>800*600</item>
+    </array>
+</resources>

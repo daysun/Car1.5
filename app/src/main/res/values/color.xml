@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<drawable name="dark_blue">#002644</drawable>
+<drawable name="text_blue">#6c99bb</drawable>
+<drawable name="btn_blue">#4ac2da</drawable>
+<drawable name="btn_pressed_blue">#7ac6d5</drawable>
+<drawable name="gray_red">#eb7d7c</drawable>
+</resources>

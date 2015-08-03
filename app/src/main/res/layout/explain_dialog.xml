@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_margin="60dp"
+    android:layout_marginLeft="80dp"
+    android:layout_marginRight="80dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:background="@drawable/dialog_shape">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_text"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="1、请点击参数设置录入基本房屋信息"
+                android:layout_marginTop="10dp"
+                android:maxLines="5"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="left"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2、请在示意图上拖动以完成障碍物摆放，然后点击障碍物摆放完成按钮"
+                android:layout_marginTop="10dp"
+                android:maxLines="5"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="left"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="3、依次选择若干个点生成最优路径或者手动生成路径"
+                android:layout_marginTop="10dp"
+                android:maxLines="5"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="left"
+                />
+            </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ok"
+            android:padding="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:layout_below="@id/dialog_text"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" >
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="确定"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--
+        <ImageButton
+            android:id="@+id/dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#876f"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            />-->
+</RelativeLayout>
